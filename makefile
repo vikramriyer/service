@@ -394,9 +394,9 @@ lint:
 vuln-check:
 	govulncheck ./...
 
-test: test-only lint #vuln-check
+test: test-only lint vuln-check
 
-test-race: test-r lint #vuln-check
+test-race: test-r lint vuln-check
 
 # ==============================================================================
 # Hitting endpoints
